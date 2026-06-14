@@ -1,12 +1,24 @@
 ---
 import CallToAction from './CallToAction.astro';
 import Icon from './Icon.astro';
+
+interface Props {
+	title?: string;
+	buttonLabel?: string;
+	href?: string;
+}
+
+const {
+	title = 'Interested in working together?',
+	buttonLabel = 'Send Me a Message',
+	href = 'mailto:me@example.com',
+} = Astro.props;
 ---
 
 <aside>
-	<h2>Interested in working together?</h2>
-	<CallToAction href="mailto:me@example.com">
-		Send Me a Message
+	<h2>{title}</h2>
+	<CallToAction href={href}>
+		{buttonLabel}
 		<Icon icon="paper-plane-tilt" size="1.2em" />
 	</CallToAction>
 </aside>

@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 // Component Imports
 import CallToAction from '../components/CallToAction.astro';
 // Page section components
@@ -7,6 +7,7 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
 import Icon from '../components/Icon.astro';
+import { iconPaths } from '../components/IconPaths';
 import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import Skills from '../components/Skills.astro';
@@ -18,6 +19,10 @@ const projects = (await getCollection('work'))
 	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 	.slice(0, 4);
 
+// Page content (dé-hardcodé) — édité via TinaCMS dans src/content/pages/home.md.
+const page = await getEntry('pages', 'home');
+const { hero, skills = [], selectedWork, mentions, contact } = page!.data;
+
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 ---
@@ -26,34 +31,40 @@ const projects = (await getCollection('work'))
 	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
-				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
-					align="start"
-				>
-					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
-					</div>
+				<Hero title={hero.title} tagline={hero.tagline} align={hero.align ?? 'center'}>
+					{
+						hero.roles && hero.roles.length > 0 && (
+							<div class="roles">
+								{hero.roles.map((role) => (
+									<Pill>
+										<Icon icon={role.icon as keyof typeof iconPaths} size="1.33em" /> {role.label}
+									</Pill>
+								))}
+							</div>
+						)
+					}
 				</Hero>
 
-				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
-					width="480"
-					height="620"
-					src="/assets/portrait.jpg"
-				/>
+				{
+					hero.image && (
+						<img
+							alt={hero.imageAlt}
+							width={hero.imageWidth}
+							height={hero.imageHeight}
+							src={hero.image}
+						/>
+					)
+				}
 			</header>
 
-			<Skills />
+			<Skills skills={skills} />
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>{selectedWork?.title}</h3>
+					<p>{selectedWork?.text}</p>
 				</header>
 
 				<div class="gallery">
@@ -78,17 +89,14 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
-					</p>
+					<h3>{mentions?.title}</h3>
+					<p>{mentions?.text}</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							(mentions?.brands ?? []).map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
@@ -99,7 +107,11 @@ const projects = (await getCollection('work'))
 			</section>
 		</main>
 
-		<ContactCTA />
+		<ContactCTA
+			title={contact?.title}
+			buttonLabel={contact?.buttonLabel}
+			href={contact?.href}
+		/>
 	</div>
 </BaseLayout>
 
