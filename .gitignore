@@ -27,3 +27,4 @@ public/admin/
 
 # jetbrains setting folder
 .idea/
+dist-backend/
