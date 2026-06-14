@@ -1,27 +1,35 @@
 ---
-title: About | Jeanine White
-description: About Jeanine White Lorem Ipsum
+title: À propos | Camille Laurent
+description: Développeuse créative basée à Lyon, je conçois des sites et produits web sur mesure.
 hero:
-  title: About
-  tagline: Thanks for stopping by. Read below to learn more about myself and my background.
+  title: À propos
+  tagline: Merci de votre visite. Voici quelques mots sur mon parcours et ma façon de travailler.
   image: /assets/at-work.jpg
-  imageAlt: Jeanine White at work with a colleague
+  imageAlt: Camille Laurent en plein travail, en discussion avec un collègue
   imageWidth: 1553
   imageHeight: 873
 sections:
-  - title: Background
+  - title: Parcours
     body:
-      - 'Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.'
-      - 'Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.'
-      - 'Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.'
-  - title: Education
+      - >-
+        Développeuse depuis une dizaine d'années, j'accompagne agences et marques dans la création
+        de sites performants et durables. J'aime les projets où le design et la technique avancent
+        ensemble, du premier croquis jusqu'à la mise en ligne.
+      - >-
+        Je travaille au quotidien avec des outils modernes comme
+        <a href="https://astro.build/">Astro</a>, en privilégiant des sites rapides, accessibles et
+        faciles à maintenir pour les équipes qui les font vivre.
+      - >-
+        Au-delà du code, je m'attache à comprendre les enjeux métier de chaque client pour livrer
+        des résultats concrets, et pas seulement de belles pages.
+  - title: Formation
     body:
-      - Corporis voluptates tenetur laudantium.
-  - title: Skills
+      - Master en informatique, complété par une veille continue sur le web design et les performances.
+  - title: Compétences
     body:
-      - officia unde omnis
+      - TypeScript, Astro, React, design systems, accessibilité et SEO technique.
 contact:
-  title: Interested in working together?
-  buttonLabel: Send Me a Message
-  href: mailto:me@example.com
+  title: Envie de travailler ensemble ?
+  buttonLabel: Écrivez-moi
+  href: mailto:camille@example.fr
 ---

@@ -1,43 +1,43 @@
 ---
 hero:
-  title: Hello, my name is Jeanine White
-  tagline: I am a Creative Developer who is currently based in Portland, Oregon.
+  title: Bonjour, je m'appelle Camille Laurent
+  tagline: Développeuse créative, installée à Lyon, je conçois des sites et produits web sur mesure.
   align: start
   image: /assets/portrait.jpg
-  imageAlt: Jeanine White smiling in a red plaid shirt and tortoise shell glasses
+  imageAlt: Camille Laurent, souriante, en chemise à carreaux et lunettes en écaille
   imageWidth: 480
   imageHeight: 620
   roles:
     - icon: code
-      label: Developer
+      label: Développeuse
     - icon: microphone-stage
-      label: Speaker
+      label: Conférencière
     - icon: pencil-line
-      label: Writer
+      label: Autrice
 skills:
   - icon: terminal-window
-    title: Full Stack
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+    title: Full stack
+    description: Du front réactif à l'API, je conçois des produits web complets, rapides et faciles à faire évoluer.
   - icon: trophy
-    title: Industry Leader
-    description: Neque viverra justo nec ultrices dui. Est ultricies integer quis auctor elit.
+    title: Reconnue dans le métier
+    description: J'interviens en conférence et j'écris sur le développement web pour partager mes pratiques avec la communauté.
   - icon: strategy
-    title: Strategy-Minded
-    description: Urna porttitor rhoncus dolor purus non enim praesent ornare.
+    title: Sens du produit
+    description: J'aligne chaque choix technique sur les objectifs métier et sur l'expérience réelle des utilisateurs.
 selectedWork:
-  title: Selected Work
-  text: Take a look below at some of my featured work for clients from the past few years.
+  title: Travaux sélectionnés
+  text: Voici quelques projets réalisés pour mes clients ces dernières années.
 mentions:
-  title: Mentions
-  text: I have been fortunate enough to receive praise for my work in several publications. Take a look below to learn more.
+  title: Ils en parlent
+  text: Mon travail a été remarqué dans plusieurs médias. En voici un aperçu.
   brands:
-    - Medium
-    - BuzzFeed
-    - The Next Web
-    - awwwards.
-    - TechCrunch
+    - Le Monde
+    - Numerama
+    - Blog du Modérateur
+    - Awwwards
+    - Smashing Magazine
 contact:
-  title: Interested in working together?
-  buttonLabel: Send Me a Message
-  href: mailto:me@example.com
+  title: Envie de travailler ensemble ?
+  buttonLabel: Écrivez-moi
+  href: mailto:camille@example.fr
 ---
