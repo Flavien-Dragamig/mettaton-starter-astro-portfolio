@@ -15,7 +15,12 @@ pnpm-debug.log*
 
 # environment variables
 .env
+.env.local
 .env.production
+
+# TinaCMS — fichiers générés (schéma, client, admin statique)
+tina/__generated__/
+public/admin/
 
 # macOS-specific files
 .DS_Store
