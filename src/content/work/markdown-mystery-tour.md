@@ -2,34 +2,34 @@
 title: Markdown Mystery Tour
 publishDate: 2020-03-02 00:00:00
 img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: Reflets irisés d'un liquide bleu vif et rose
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  Nous avons imaginé un jeu d'enquête pour initier au formatage Markdown. Suspense, soupçons… et syntaxe !
 tags:
   - Design
   - Dev
   - User Testing
 ---
 
-## Level-two heading
+## Titre de niveau deux
 
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
+> Dis-moi et j'oublie. Enseigne-moi et je me souviens. Implique-moi et j'apprends.
 
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+Conçu avec <a href="https://astro.build/">Astro</a>, ce projet transforme l'apprentissage du Markdown en véritable partie de plaisir. Plutôt qu'un énième tutoriel, nous avons misé sur l'enquête : à chaque indice résolu, le joueur découvre une nouvelle règle de syntaxe sans même s'en rendre compte.
 
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
+Le scénario guide le lecteur de chapitre en chapitre, en distillant titres, listes, liens et citations au fil des rebondissements. La progression reste fluide, des premières bases jusqu'aux notations les plus avancées.
 
-### Level-three heading
+### Titre de niveau trois
 
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
+Nous avons accordé un soin particulier au rythme : chaque énigme introduit une notion, puis la met aussitôt en pratique. L'objectif était que la mémorisation passe par le jeu plutôt que par la répétition.
 
-### Level-three heading
+### Titre de niveau trois
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+Plusieurs sessions de tests utilisateurs nous ont permis d'ajuster la difficulté et de clarifier les passages les plus délicats. Les retours ont confirmé que l'on retient bien mieux une règle quand on la découvre soi-même.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+#### Titre de niveau quatre
 
-#### Level-four heading
-
-- We noted this
-- And also this other point
+- Nous avons noté ce point
+- Ainsi que cet autre point
+</content>
+</invoke>
