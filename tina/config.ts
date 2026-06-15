@@ -42,10 +42,9 @@ export default defineConfig({
 
   media: {
     tina: {
-      // NB : Astro optimise les images de `src/assets` via le helper image().
-      // Tina écrit, lui, dans le dossier public. Cette friction assets ↔ public
-      // sera tranchée au Lot 4 (média manager). En local on pointe sur public/.
-      mediaRoot: '',
+      // Toutes les images vivent dans `public/assets` (chemins `/assets/...`),
+      // éditables via Tina sans friction. Modèle unifié des starters (cf. ADR images).
+      mediaRoot: 'assets',
       publicFolder: 'public',
     },
   },
