@@ -16,7 +16,7 @@
     "backend:start": "node dist-backend/server.mjs"
   },
   "dependencies": {
-    "@tinacms/cli": "^2.4.4",
+    "@tinacms/cli": "^2.5.1",
     "@tinacms/datalayer": "^2.0.23",
     "astro": "^6.4.6",
     "cookie-parser": "^1.4.7",
@@ -24,8 +24,8 @@
     "express": "^4.22.2",
     "memory-level": "^3.1.0",
     "sharp": "^0.34.3",
-    "tinacms": "^3.9.1",
-    "tinacms-authjs": "^23.0.1",
+    "tinacms": "^3.9.3",
+    "tinacms-authjs": "^23.0.3",
     "tinacms-gitprovider-github": "^4.1.10"
   },
   "devDependencies": {
