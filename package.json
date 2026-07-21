@@ -18,7 +18,7 @@
   "dependencies": {
     "@tinacms/cli": "^2.4.4",
     "@tinacms/datalayer": "^2.0.23",
-    "astro": "^6.4.6",
+    "astro": "^7.1.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
     "express": "^4.22.2",
